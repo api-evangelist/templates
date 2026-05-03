@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "templates": "https://api-evangelist.com/topics/templates/",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "SoftwareSourceCode": "schema:SoftwareSourceCode",
+    "TechArticle": "schema:TechArticle",
+    "template": {
+      "@id": "templates:template",
+      "@type": "@id"
+    },
+    "templateEngine": {
+      "@id": "templates:templateEngine",
+      "@type": "@id"
+    },
+    "templateSyntax": {
+      "@id": "templates:templateSyntax",
+      "@type": "schema:Text"
+    },
+    "targetLanguage": {
+      "@id": "templates:targetLanguage",
+      "@type": "schema:Text"
+    },
+    "codeGenerator": {
+      "@id": "templates:codeGenerator",
+      "@type": "@id"
+    },
+    "scaffoldingTool": {
+      "@id": "templates:scaffoldingTool",
+      "@type": "@id"
+    },
+    "templateVariable": {
+      "@id": "templates:templateVariable",
+      "@type": "schema:Text"
+    },
+    "outputFormat": {
+      "@id": "templates:outputFormat",
+      "@type": "schema:Text"
+    },
+    "Tags": "schema:keywords",
+    "Documentation": "schema:documentation",
+    "License": "schema:license",
+    "Repository": "schema:codeRepository"
+  }
+}

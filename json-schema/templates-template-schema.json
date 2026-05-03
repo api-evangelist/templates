@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.com/schemas/templates/template.json",
+  "title": "API Template",
+  "description": "Schema for an API template artifact including metadata, engine requirements, and variable definitions",
+  "type": "object",
+  "required": ["name", "templateEngine", "version"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Human-readable name of the template",
+      "example": "OpenAPI REST API Template"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the template's purpose and use case"
+    },
+    "version": {
+      "type": "string",
+      "description": "Template version following semver",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "example": "1.0.0"
+    },
+    "templateEngine": {
+      "type": "string",
+      "description": "Templating engine required to render this template",
+      "enum": ["mustache", "handlebars", "jinja2", "liquid", "ejs", "erb", "freemarker"],
+      "example": "mustache"
+    },
+    "targetLanguage": {
+      "type": "string",
+      "description": "Primary output language or format",
+      "example": "typescript"
+    },
+    "targetFramework": {
+      "type": "string",
+      "description": "Target framework or library",
+      "example": "express"
+    },
+    "variables": {
+      "type": "array",
+      "description": "Template variable definitions",
+      "items": {
+        "type": "object",
+        "required": ["name", "type"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Variable name as it appears in the template"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["string", "boolean", "integer", "array", "object"],
+            "description": "Variable data type"
+          },
+          "required": {
+            "type": "boolean",
+            "default": false,
+            "description": "Whether this variable is required"
+          },
+          "default": {
+            "description": "Default value if variable is not provided"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the variable's purpose"
+          }
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "description": "Categorization tags",
+      "items": {
+        "type": "string"
+      },
+      "example": ["OpenAPI", "REST", "TypeScript"]
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX license identifier",
+      "example": "Apache-2.0"
+    },
+    "repositoryUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Source repository URL"
+    }
+  }
+}

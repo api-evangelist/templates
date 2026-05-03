@@ -1,0 +1,102 @@
+name: Templates Vocabulary
+description: Domain vocabulary and taxonomy for API design templates, code generation templates, and templating engines used in API development workflows.
+version: "1.0.0"
+created: "2026-05-03"
+modified: "2026-05-03"
+
+domains:
+  - name: Templating Engines
+    description: Software systems that combine templates with data to produce output documents
+    terms:
+      - term: Template
+        definition: A pre-designed file or pattern containing placeholders (variables) that are filled in at runtime to produce a final document, source file, or configuration.
+        synonyms: [Template File, Boilerplate, Pattern]
+        tags: [Templating, Core Concept]
+
+      - term: Template Engine
+        definition: A software library or tool that processes templates by substituting variable placeholders with actual data values. Examples include Mustache, Handlebars, Jinja2, Liquid, and ERB.
+        synonyms: [Templating System, Template Processor]
+        tags: [Templating, Core Concept]
+
+      - term: Template Variable
+        definition: A placeholder in a template that will be replaced with a concrete value when the template is rendered. Notation varies by engine (e.g., {{variable}}, ${variable}, <%= variable %>).
+        synonyms: [Placeholder, Template Token, Variable Interpolation]
+        tags: [Templating]
+
+      - term: Partial
+        definition: A reusable sub-template that can be included within other templates. Supports composition and reduces duplication across template files.
+        synonyms: [Partial Template, Template Include, Template Fragment]
+        tags: [Templating]
+
+      - term: Helper
+        definition: A function registered with a templating engine that performs custom logic during rendering (e.g., date formatting, string transformation). Used in Handlebars and similar engines.
+        synonyms: [Template Helper, Template Function]
+        tags: [Templating]
+
+      - term: Logic-Less Template
+        definition: A template syntax (like Mustache) that deliberately avoids programming logic (if/else, loops beyond iteration) to keep templates simple and separate from business logic.
+        synonyms: [Mustache-Style Template, Data-Only Template]
+        tags: [Templating]
+
+  - name: Code Generation
+    description: Automated generation of source code from templates, specs, or models
+    terms:
+      - term: Code Generation
+        definition: The automated creation of source code from a higher-level specification, template, or model. In APIs, OpenAPI specs drive generation of client SDKs, server stubs, and documentation.
+        synonyms: [Code Gen, Auto-Generated Code, SDK Generation]
+        tags: [Code Generation]
+
+      - term: SDK Generation
+        definition: Automated creation of Software Development Kit libraries in multiple programming languages from an API specification (OpenAPI, AsyncAPI, GraphQL SDL).
+        synonyms: [Client Library Generation, SDK Gen]
+        tags: [Code Generation, SDK]
+
+      - term: Server Stub
+        definition: Automatically generated server-side code skeleton from an API specification, providing function signatures and routing but requiring business logic to be filled in.
+        synonyms: [Server Scaffold, API Stub]
+        tags: [Code Generation]
+
+      - term: Mustache Template
+        definition: A Mustache-syntax template file (typically .mustache extension) used by code generators like OpenAPI Generator to produce language-specific SDK code. Variables use double curly brace notation.
+        tags: [Code Generation, Mustache]
+
+  - name: Project Scaffolding
+    description: Tools and patterns for generating complete project structures from templates
+    terms:
+      - term: Scaffolding
+        definition: The process of generating an initial project structure, directory layout, and configuration files from a template. Provides a standardized starting point for new API projects.
+        synonyms: [Project Generation, Bootstrapping, Project Template]
+        tags: [Scaffolding]
+
+      - term: Cookiecutter Template
+        definition: A Cookiecutter-compatible project template using Jinja2 variables in filenames and file contents. Defined by a cookiecutter.json context file specifying template variables.
+        tags: [Scaffolding, Python, Cookiecutter]
+
+      - term: Yeoman Generator
+        definition: A Yeoman-compatible scaffolding plugin that defines prompts and file generation logic for creating project structures. Published to npm as `generator-*` packages.
+        tags: [Scaffolding, JavaScript, Yeoman]
+
+  - name: API Templates
+    description: Template patterns specific to API design, documentation, and specifications
+    terms:
+      - term: OpenAPI Template
+        definition: A template for generating OpenAPI specification files (YAML/JSON) with standardized structure, common security schemes, error responses, and pagination patterns pre-configured.
+        synonyms: [Swagger Template, OAS Template]
+        tags: [API Design, OpenAPI]
+
+      - term: AsyncAPI Template
+        definition: A template for generating AsyncAPI specification files covering event-driven and message-based API designs with standardized channel and message schemas.
+        tags: [API Design, AsyncAPI, Events]
+
+      - term: Postman Collection Template
+        definition: A pre-structured Postman collection template with example requests, environment variables, test scripts, and folder organization for API testing workflows.
+        tags: [API Testing, Postman]
+
+      - term: API Documentation Template
+        definition: A template for generating API reference documentation including endpoint descriptions, parameter tables, request/response examples, and authentication guides.
+        synonyms: [Docs Template, Reference Documentation Template]
+        tags: [Documentation, API Design]
+
+      - term: JSON Schema Template
+        definition: A reusable JSON Schema skeleton with common properties (id, created, modified, status) and standard patterns (pagination, error objects) for API data models.
+        tags: [JSON Schema, API Design]
