@@ -30,7 +30,7 @@ apis:
     properties:
       - type: Documentation
         url: https://mustache.github.io/mustache.5.html
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/mustache/mustache
 
   - name: Handlebars.js
@@ -46,7 +46,7 @@ apis:
     properties:
       - type: Documentation
         url: https://handlebarsjs.com/guide/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/handlebars-lang/handlebars.js
 
   - name: Jinja2
@@ -62,7 +62,7 @@ apis:
     properties:
       - type: Documentation
         url: https://jinja.palletsprojects.com/en/latest/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/pallets/jinja
 
   - name: OpenAPI Generator
@@ -79,7 +79,7 @@ apis:
     properties:
       - type: Documentation
         url: https://openapi-generator.tech/docs/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/OpenAPITools/openapi-generator
 
   - name: Cookiecutter
@@ -96,7 +96,7 @@ apis:
     properties:
       - type: Documentation
         url: https://cookiecutter.readthedocs.io/en/stable/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/cookiecutter/cookiecutter
 
   - name: Yeoman
@@ -113,15 +113,15 @@ apis:
     properties:
       - type: Documentation
         url: https://yeoman.io/learning/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/yeoman/yeoman
 
 common:
   - type: Website
     url: https://mustache.github.io/
-  - type: GitHub Repository
+  - type: GitHubRepository
     url: https://github.com/mustache/mustache
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/templates-context.jsonld
   - type: JSONSchema
     url: json-schema/templates-template-schema.json
