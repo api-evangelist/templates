@@ -117,6 +117,8 @@ apis:
         url: https://github.com/yeoman/yeoman
 
 common:
+  - type: DomainSecurity
+    url: security/templates-domain-security.yml
   - type: Website
     url: https://mustache.github.io/
   - type: GitHubRepository

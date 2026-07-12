@@ -1,0 +1,37 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: handlebarsjs.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 19 09:41:54 2026 GMT
+  hsts: false
+- host: jinja.palletsprojects.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  3 13:39:26 2026 GMT
+  hsts: false
+- host: openapi-generator.tech
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 29 11:13:19 2026 GMT
+  hsts: true
+  hsts_max_age: 31556952
+domains:
+- domain: handlebarsjs.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
+- domain: palletsprojects.com
+  dnssec: false
+  caa:
+  - 0 issuewild "letsencrypt.org"
+  - 0 issuewild "pki.goog; cansignhttpexchanges=yes"
+  - 0 issuewild "ssl.com"
+  - 0 iodef "mailto:security@palletsprojects.com"
+  - 0 issue "comodoca.com"
+  - 0 issue "digicert.com; cansignhttpexchanges=yes"
+  spf: true
+  dmarc: false
