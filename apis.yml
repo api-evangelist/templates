@@ -1,3 +1,15 @@
+deliveryModel:
+  model: self-hosted
+  license: MIT
+  open_source: true
+  commercial: false
+  callable_host: false
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -130,6 +142,12 @@ apis:
         url: https://github.com/yeoman/yeoman
 
 common:
+  - type: IssueTracker
+    url: https://github.com/mustache/mustache/issues
+  - type: Releases
+    url: https://github.com/mustache/mustache/releases
+  - type: ContributionGuide
+    url: https://github.com/mustache/mustache/blob/master/CONTRIBUTING.md
   - type: License
     name: MIT
     url: https://github.com/mustache/mustache/blob/master/LICENSE
