@@ -40,6 +40,7 @@ tags:
   - Documentation
   - OpenAPI
   - AsyncAPI
+  - Developer Tools
 
 apis:
   - name: Mustache Templates
