@@ -24,6 +24,7 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/templates.png
 name: Templates
+kind: topic
 description: >-
   A cross-industry subject-matter collection covering API design templates, code templates,
   documentation templates, API specification templates, and templating engines used in API
