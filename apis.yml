@@ -144,6 +144,12 @@ apis:
         url: https://github.com/yeoman/yeoman
 
 common:
+  - type: Plans
+    url: plans/templates-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/templates-rate-limits.yml
+  - type: FinOps
+    url: finops/templates-finops.yml
   - type: IssueTracker
     url: https://github.com/mustache/mustache/issues
   - type: Releases
